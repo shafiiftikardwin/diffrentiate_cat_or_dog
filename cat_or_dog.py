@@ -21,9 +21,8 @@ def show():
         """
     )
 
-    script_path = os.path.dirname(__file__)
-    rel_path = "images"
-    abs_file_path = script_path + "/" + rel_path
+    
+    abs_file_path = "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images/"
     files = os.listdir(abs_file_path)
     if "annotations" not in st.session_state:
         st.session_state.annotations = {}
@@ -48,7 +47,7 @@ def show():
         
             
     image_path = (
-        "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images"
+        "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images/"
         +
         st.session_state.current_image
     )
