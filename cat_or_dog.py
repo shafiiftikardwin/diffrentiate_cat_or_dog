@@ -22,8 +22,8 @@ def show():
     )
 
     
-    abs_file_path = "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images/"
-    files = os.listdir(abs_file_path)
+    #abs_file_path = "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images/"
+    files = "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images/"
     if "annotations" not in st.session_state:
         st.session_state.annotations = {}
         st.session_state.files = files
@@ -65,7 +65,8 @@ def show():
             )
             st.button(" This is a dog! 🐶", on_click=annotate, args=("dog",))
             st.button(" This is a cat! 🐱", on_click=annotate, args=("cat",))
-            st.write("### Your answer is :-  " + st.session_state.true)
+            st.write("### Your answer is :-  " )
+            st.write(st.session_state.true)
 
         else:
             st.success(
