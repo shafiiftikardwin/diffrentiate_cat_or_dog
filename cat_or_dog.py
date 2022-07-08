@@ -48,7 +48,8 @@ def show():
         
             
     image_path = (
-        "http://127.0.0.1:8887/"+
+        "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images"
+        +
         st.session_state.current_image
     )
 
