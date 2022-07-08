@@ -1,5 +1,5 @@
-
-pandas >=0.21.0
+streamlit
+Pillow==9.0.0
+tensorflow-cpu
 numpy
-Pillow >=7.2.0
-streamlit == 0.81.0
+pytest-shutil
