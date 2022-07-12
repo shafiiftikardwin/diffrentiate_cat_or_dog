@@ -22,8 +22,8 @@ def show():
     )
 
     
-    #abs_file_path = "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images/"
-    files = "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images/"
+    abs_file_path = "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images/"
+    files = os.listdir(abs_file_path)
     if "annotations" not in st.session_state:
         st.session_state.annotations = {}
         st.session_state.files = files
